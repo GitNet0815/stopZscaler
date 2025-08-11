@@ -1,0 +1,10 @@
+You are an experienced python programmer with a lot of expertise. write  a python program using the pyautogui library to:
+- open the Zscaler Client Connector in windows 11
+- click on internet security on the left, use the picture internet_security.png,  look for either internet_security.png or internet_security2.png
+After that nother case: If it finds that is it already off, identified by picture InternetSec_on.png, just close the program
+- click on 'TURN OFF' on the right side for Service status, use the picture turn_off.png
+click into a textfield using image enterreasons.png, enter the 3 letters 'XYZ'
+click on the Button 'Continue' with image continueBtn.png
+- Add to close the program after this has been done
+
+pyinstaller.exe --onefile --runtime-tmpdir=. --hidden-import win32timezone testZscaler.py
